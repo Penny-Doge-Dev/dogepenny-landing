@@ -1,0 +1,31 @@
+{
+    "Default Component": {
+      "scope": "typescriptreact",
+      "prefix": "Component",
+      "body": [
+        "export function ${1:$TM_FILENAME_BASE}() {",
+        "  return (",
+        "    $2",
+        "  )",
+        "}"
+      ],
+      "description": "Create Component"
+    },
+  
+    "Component With Props": {
+      "scope": "typescriptreact",
+      "prefix": "ComponentProps",
+      "body": [
+        "interface ${1:$TM_FILENAME_BASE}Props {",
+        "  $2",
+        "}",
+        " ",
+        "export function ${1:$TM_FILENAME_BASE}({$3}: ${1:$TM_FILENAME_BASE}Props) {",
+        "  return (",
+        "    $4",
+        "  )",
+        "}"
+      ],
+      "description": "Create Component with Props"
+    },
+  }
