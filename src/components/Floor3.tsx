@@ -24,7 +24,7 @@ export function Floor3() {
         src="/assets/coin.gif"
         alt="Penny Doge Coin"
       />
-      <Socials className="absolute bottom-[10rem] left-1/2 -translate-x-1/2 px-8" />
+      <Socials className="absolute bottom-[7rem] left-1/2 -translate-x-1/2 px-8" />
       <div className="relative z-10 flex w-full max-w-full flex-col items-center justify-center gap-24 md:gap-0">
         <h1
           style={{
