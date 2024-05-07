@@ -18,13 +18,13 @@ export function Floor3() {
   }
 
   return (
-    <div className="relative flex h-[1080px] w-full items-center justify-center overflow-hidden px-8 pb-96 pt-48">
+    <div className="relative flex h-[1080px] min-h-screen w-full items-center justify-center overflow-hidden px-8 pb-96 pt-48">
       <img
         className="absolute left-1/2 top-[1rem] h-[24rem] -translate-x-1/2 md:h-[36rem]"
         src="/assets/coin.gif"
         alt="Penny Doge Coin"
       />
-      <Socials className="absolute bottom-[7rem] left-1/2 -translate-x-1/2 px-8" />
+      <Socials className="absolute bottom-[10rem] left-1/2 -translate-x-1/2 px-8" />
       <div className="relative z-10 flex w-full max-w-full flex-col items-center justify-center gap-24 md:gap-0">
         <h1
           style={{
