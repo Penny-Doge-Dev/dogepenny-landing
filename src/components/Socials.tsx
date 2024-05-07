@@ -5,6 +5,11 @@ import { IconTwitter } from './icons/IconTwitter'
 import Link from 'next/link'
 import { twMerge } from 'tailwind-merge'
 
+const SOCIAL_LINKS = {
+  x: 'https://twitter.com/penny_doge',
+  telegram: 'https://t.me/PennyDogeSOL',
+}
+
 interface SocialsProps {
   className?: string
 }
@@ -16,7 +21,7 @@ export function Socials({ className }: SocialsProps) {
         <div className="bordered aspect-square flex-1">
           <Link
             title="X(Twitter)"
-            href="https://twitter.com/penny_doge"
+            href={SOCIAL_LINKS.x}
             target="_blank"
             className="pixel-corners flex size-full items-center justify-center bg-black text-white"
           >
@@ -26,7 +31,7 @@ export function Socials({ className }: SocialsProps) {
         <div className="bordered aspect-square flex-1">
           <Link
             title="Telegram"
-            href="https://t.me/pennydoge"
+            href={SOCIAL_LINKS.telegram}
             target="_blank"
             className="pixel-corners flex size-full items-center justify-center bg-blue-400 text-white"
           >
