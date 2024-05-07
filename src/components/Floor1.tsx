@@ -4,6 +4,7 @@ import { IconDextools } from './icons/IconDextools'
 import { IconTelegram } from './icons/IconTelegram'
 import { IconTwitter } from './icons/IconTwitter'
 import Link from 'next/link'
+import { Socials } from './Socials'
 
 const title = `You have to buy PennyDoge $PDG`
 
@@ -28,7 +29,7 @@ const steps = [
 
 export function Floor1() {
   return (
-    <div className="relative flex min-h-[calc(100vh+50rem)] w-full items-end justify-end overflow-hidden px-8 lg:min-h-[calc(100vh+24rem)] lg:items-center lg:justify-start">
+    <div className="relative flex h-[1440px] w-full items-end justify-end overflow-hidden px-8 lg:items-center lg:justify-start">
       <img
         src="/assets/penny-doge-flip.png"
         alt="penny doge"
@@ -45,51 +46,11 @@ export function Floor1() {
           className="bordered relative h-[24rem] w-[24rem]"
           alt="painting 2"
         />
-        <div className="flex w-full max-w-[24rem] flex-col">
-          <div className="flex w-full gap-4">
-            <div className="bordered aspect-square flex-1">
-              <Link
-                title="X(Twitter)"
-                href="https://twitter.com/penny_doge"
-                target="_blank"
-                className="pixel-corners flex size-full items-center justify-center bg-black text-white"
-              >
-                <IconTwitter size="3rem" />
-              </Link>
-            </div>
-            <div className="bordered aspect-square flex-1">
-              <Link
-                title="Telegram"
-                href="https://t.me/pennydoge"
-                target="_blank"
-                className="pixel-corners flex size-full items-center justify-center bg-blue-400 text-white"
-              >
-                <IconTelegram size="3rem" />
-              </Link>
-            </div>
-            <div className="bordered aspect-square flex-1">
-              <button
-                title="Coinmarketcap (In Progress)"
-                className="pixel-corners flex size-full items-center justify-center bg-blue-600 text-white"
-              >
-                <IconCMC size="2rem" />
-              </button>
-            </div>
-            <div className="bordered aspect-square flex-1">
-              <button
-                title="Dextools (In Progress)"
-                className="pixel-corners flex size-full items-center justify-center bg-[#05A3C9] text-white"
-              >
-                <IconDextools size="3rem" />
-              </button>
-            </div>
-          </div>
-          <img src="/assets/shelf.png" alt="shelf" className="bordered" />
-        </div>
+        <Socials />
       </div>
       <div
         style={{ animationDuration: '5s' }}
-        className="relative z-10 mb-96 flex flex-col gap-8 motion-safe:animate-float md:mb-24 lg:ml-48 "
+        className="relative z-10 mb-96 flex flex-col gap-8 motion-safe:animate-float md:mb-24 lg:ml-48"
       >
         <div className="bordered">
           <div className="pixel-corners w-auto bg-white p-8">

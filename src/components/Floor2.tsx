@@ -4,7 +4,7 @@ const content = `Dive into the zany and delightful universe of PennyDoge, where 
 
 export function Floor2() {
   return (
-    <div className="relative flex min-h-[calc(100vh+50rem)] w-full items-center justify-center overflow-hidden px-8 lg:min-h-[calc(100vh+24rem)]">
+    <div className="relative flex h-[1440px] w-full items-center justify-center overflow-hidden px-8">
       <img
         src="/assets/penny-doge.png"
         alt="penny doge"
@@ -22,7 +22,7 @@ export function Floor2() {
       />
       <div
         style={{ animationDuration: '5s' }}
-        className="bordered -transalate-y-1/2 absolute bottom-[24rem] left-[1rem] right-[1rem] z-10 w-auto max-w-[48ch] motion-safe:animate-float md:bottom-[20%] md:left-auto md:right-[15%] md:w-max"
+        className="bordered -transalate-y-1/2 absolute bottom-[24rem] left-[1rem] right-[1rem] z-10 w-auto max-w-[48ch] motion-safe:animate-float md:bottom-[24rem] md:left-auto md:right-[15%] md:w-max"
       >
         <div className="pixel-corners flex flex-col justify-between gap-4 bg-white p-8 text-lg md:flex-row md:items-center md:gap-16">
           <h2>{content}</h2>

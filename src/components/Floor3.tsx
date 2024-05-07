@@ -1,4 +1,5 @@
 import { FloorAsset } from './FloorAsset'
+import { Socials } from './Socials'
 import { useState } from 'react'
 
 const CA = 'CmM7snNDGMZAigThUewigXzJQjZAd6Ni4sq6fKhHGzhN'
@@ -17,12 +18,13 @@ export function Floor3() {
   }
 
   return (
-    <div className="relative flex min-h-screen w-full items-center justify-center overflow-hidden px-8 pb-96 pt-48">
+    <div className="relative flex h-[1080px] w-full items-center justify-center overflow-hidden px-8 pb-96 pt-48">
       <img
         className="absolute left-1/2 top-[1rem] h-[24rem] -translate-x-1/2 md:h-[36rem]"
         src="/assets/coin.gif"
         alt="Penny Doge Coin"
       />
+      <Socials className="absolute bottom-[10rem] left-1/2 -translate-x-1/2 px-8" />
       <div className="relative z-10 flex w-full max-w-full flex-col items-center justify-center gap-24 md:gap-0">
         <h1
           style={{
@@ -34,9 +36,9 @@ export function Floor3() {
         </h1>
         <div
           style={{ animationDuration: '3s' }}
-          className="bordered motion-safe:animate-float"
+          className="bordered max-w-[100vw] px-8 motion-safe:animate-float"
         >
-          <div className="pixel-corners flex w-full max-w-full flex-col justify-between gap-4 bg-white p-8 md:w-max md:flex-row md:items-center md:gap-16">
+          <div className="pixel-corners flex w-full flex-col justify-between gap-4 bg-white p-8 md:w-max md:flex-row md:items-center md:gap-16">
             <div className="flex-col">
               <h3 className="text-xl font-bold">Contract Address</h3>
               <h2 className="break-words">{CA}</h2>
@@ -50,7 +52,7 @@ export function Floor3() {
           </div>
         </div>
       </div>
-      <div className="absolute bottom-[2rem] left-[2rem] isolate z-[2]">
+      <div className="absolute bottom-[2rem] left-[2rem] isolate z-[2] hidden xl:block">
         <img
           src="/assets/coin.png"
           alt="coin"
@@ -63,7 +65,7 @@ export function Floor3() {
           className="relative z-[3] h-[16rem]"
         />
       </div>
-      <div className="absolute bottom-[2rem] right-[2rem] isolate z-[3]">
+      <div className="absolute bottom-[2rem] right-[2rem] isolate z-[3] hidden xl:block">
         <img
           src="/assets/coin.png"
           alt="coin"
