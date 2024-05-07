@@ -13,16 +13,16 @@ export function Floor2() {
       <img
         src="/assets/painting.png"
         alt="painting"
-        className="mb-96 md:mb-0"
+        className="bordered mb-96 md:mb-0"
       />
       <img
         src="/assets/window.png"
         alt="window"
-        className="absolute right-[10%] top-[8rem] h-[5rem] md:top-[10rem] md:h-auto"
+        className="bordered absolute right-[10%] top-[8rem] h-[5rem] md:top-[10rem] md:h-auto"
       />
       <div
         style={{ animationDuration: '5s' }}
-        className="motion-safe:animate-float -transalate-y-1/2 absolute bottom-[24rem] left-[1rem] right-[1rem] z-10 flex w-auto max-w-[48ch] flex-col justify-between gap-4 border-[4px] border-black bg-white p-8 text-lg md:bottom-[20%] md:left-auto md:right-[15%] md:w-max md:flex-row md:items-center md:gap-16"
+        className="-transalate-y-1/2 border-blackBorder absolute bottom-[24rem] left-[1rem] right-[1rem] z-10 flex w-auto max-w-[48ch] flex-col justify-between gap-4 border-[4px] bg-white p-8 text-lg motion-safe:animate-float md:bottom-[20%] md:left-auto md:right-[15%] md:w-max md:flex-row md:items-center md:gap-16"
       >
         <h2>{content}</h2>
       </div>

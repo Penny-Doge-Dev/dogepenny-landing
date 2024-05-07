@@ -1,7 +1,8 @@
 /* eslint-disable @typescript-eslint/no-empty-function */
 
 import React, { ReactNode, createContext, useContext, useState } from 'react'
-import { useMediaQuery, useScrollLock } from 'usehooks-ts'
+
+import { useMediaQuery } from 'usehooks-ts'
 
 type ScreenContextType = {
   sm?: boolean

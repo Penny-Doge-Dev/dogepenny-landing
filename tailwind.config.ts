@@ -21,6 +21,7 @@ const config: Config = {
       colors: {
         bg: '#B3DEFE',
         black: '#212121',
+        blackBorder: '#000',
         primary: '#FFBB43',
         primaryDarkest: '#EA9E18',
         primaryDarker: '#FCB943',

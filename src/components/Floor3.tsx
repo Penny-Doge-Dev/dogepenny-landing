@@ -1,12 +1,9 @@
 import { FloorAsset } from './FloorAsset'
-import { useScreenContext } from '@contexts/ScreenContext'
 import { useState } from 'react'
 
-const CA = 'F6SafxawsnzZfbXADVz5ip1AEJna5Kb2NkycgdAGSHxS'
+const CA = 'CmM7snNDGMZAigThUewigXzJQjZAd6Ni4sq6fKhHGzhN'
 
 export function Floor3() {
-  const { lg } = useScreenContext()
-
   const [copyText, setCopyText] = useState('Copy')
 
   const handleCopy = () => {
@@ -29,16 +26,15 @@ export function Floor3() {
       <div className="relative z-10 flex w-full max-w-full flex-col items-center justify-center gap-24 md:gap-0">
         <h1
           style={{
-            WebkitTextStroke: lg ? '8px #FB850E' : '2px #FB850E',
             animationDuration: '3s',
           }}
-          className="text-primary motion-safe:animate-float text-center text-[4rem] font-extrabold md:text-[max(8rem,12vw)]"
+          className="bordered lg:text-outline-8 text-outline-4 text-center text-[4rem] font-extrabold text-primary motion-safe:animate-float md:text-[max(8rem,12vw)]"
         >
           Penny Doge
         </h1>
         <div
           style={{ animationDuration: '3s' }}
-          className="motion-safe:animate-float flex w-full max-w-full flex-col justify-between gap-4 border-[4px] border-black bg-white p-8 md:w-max md:flex-row md:items-center md:gap-16"
+          className="border-blackBorder flex w-full max-w-full flex-col justify-between gap-4 border-[4px] bg-white p-8 motion-safe:animate-float md:w-max md:flex-row md:items-center md:gap-16"
         >
           <div className="flex-col">
             <h3 className="text-xl font-bold">Contract Address</h3>
@@ -46,7 +42,7 @@ export function Floor3() {
           </div>
           <button
             onClick={handleCopy}
-            className="bg-primary hover:bg-primaryDarker active:bg-primaryDarkest border-secondary w-full border-[4px] px-12 py-4 text-2xl font-bold transition md:w-auto"
+            className="w-full border-[4px] border-secondary bg-primary px-12 py-4 text-2xl font-bold transition hover:bg-primaryDarker active:bg-primaryDarkest md:w-auto"
           >
             {copyText}
           </button>
@@ -57,7 +53,7 @@ export function Floor3() {
           src="/assets/coin.png"
           alt="coin"
           style={{ animationDuration: '2s' }}
-          className="motion-safe:animate-float -z-1 absolute left-[36%] top-[-6rem] h-[6rem] -translate-x-1/2"
+          className="bordered -z-1 absolute left-[36%] top-[-6rem] h-[6rem] -translate-x-1/2 motion-safe:animate-float"
         />
         <img
           src="/assets/box-1.png"
@@ -70,7 +66,7 @@ export function Floor3() {
           src="/assets/coin.png"
           alt="coin"
           style={{ animationDuration: '2s' }}
-          className="motion-safe:animate-float -z-1 absolute left-[16%] top-[-6rem] h-[6rem] -translate-x-1/2"
+          className="bordered -z-1 absolute left-[16%] top-[-6rem] h-[6rem] -translate-x-1/2 motion-safe:animate-float"
         />
         <img
           src="/assets/box-2.png"

@@ -12,6 +12,21 @@ body {
     scroll-behavior: smooth;
     font-family: 'Pixelify Sans', sans-serif;
   }
+
+  .text-outline-4 {
+    -webkit-text-stroke: 4px theme('colors.secondary');
+  }
+
+  .text-outline-8 {
+    -webkit-text-stroke: 8px theme('colors.secondary');
+  }
+
+  .bordered {
+    filter: drop-shadow(0 -4px 0px theme('colors.blackBorder'))
+      drop-shadow(-4px 0 0px theme('colors.blackBorder'))
+      drop-shadow(0 4px 0px theme('colors.blackBorder'))
+      drop-shadow(4px 0 0px theme('colors.blackBorder'));
+  }
 }
 
 @layer utilities {
