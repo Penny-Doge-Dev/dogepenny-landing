@@ -47,35 +47,42 @@ export function Floor1() {
         />
         <div className="flex w-full max-w-[24rem] flex-col">
           <div className="flex w-full gap-4">
-            <Link
-              title="X(Twitter)"
-              href="https://twitter.com/penny_doge"
-              target="_blank"
-              className="border-blackBorder flex aspect-square flex-1 items-center justify-center border-[4px] bg-black text-white"
-            >
-              <IconTwitter size="3rem" />
-            </Link>
-            <Link
-              title="Telegram"
-              href="https://t.me/pennydoge"
-              target="_blank"
-              className="border-blackBorder flex aspect-square flex-1 items-center justify-center border-[4px] bg-blue-400 text-white"
-            >
-              <IconTelegram size="3rem" />
-            </Link>
-            <button
-              title="Coinmarketcap (In Progress)"
-              className="border-blackBorder flex aspect-square flex-1 items-center justify-center border-[4px] bg-blue-600 text-white"
-            >
-              <IconCMC size="2rem" />
-            </button>
-            <Link
-              title="Dextools (In Progress)"
-              href="https://x.com"
-              className="border-blackBorder flex aspect-square flex-1 items-center justify-center border-[4px] bg-[#05A3C9] text-white"
-            >
-              <IconDextools size="3rem" />
-            </Link>
+            <div className="bordered aspect-square flex-1">
+              <Link
+                title="X(Twitter)"
+                href="https://twitter.com/penny_doge"
+                target="_blank"
+                className="pixel-corners flex size-full items-center justify-center bg-black text-white"
+              >
+                <IconTwitter size="3rem" />
+              </Link>
+            </div>
+            <div className="bordered aspect-square flex-1">
+              <Link
+                title="Telegram"
+                href="https://t.me/pennydoge"
+                target="_blank"
+                className="pixel-corners flex size-full items-center justify-center bg-blue-400 text-white"
+              >
+                <IconTelegram size="3rem" />
+              </Link>
+            </div>
+            <div className="bordered aspect-square flex-1">
+              <button
+                title="Coinmarketcap (In Progress)"
+                className="pixel-corners flex size-full items-center justify-center bg-blue-600 text-white"
+              >
+                <IconCMC size="2rem" />
+              </button>
+            </div>
+            <div className="bordered aspect-square flex-1">
+              <button
+                title="Dextools (In Progress)"
+                className="pixel-corners flex size-full items-center justify-center bg-[#05A3C9] text-white"
+              >
+                <IconDextools size="3rem" />
+              </button>
+            </div>
           </div>
           <img src="/assets/shelf.png" alt="shelf" className="bordered" />
         </div>
@@ -84,19 +91,23 @@ export function Floor1() {
         style={{ animationDuration: '5s' }}
         className="relative z-10 mb-96 flex flex-col gap-8 motion-safe:animate-float md:mb-24 lg:ml-48 "
       >
-        <div className="border-blackBorder w-auto border-[4px] bg-white p-8">
-          <h2 className="text-2xl">{title}</h2>
+        <div className="bordered">
+          <div className="pixel-corners w-auto bg-white p-8">
+            <h2 className="text-2xl">{title}</h2>
+          </div>
         </div>
-        <div className="border-blackBorder w-auto max-w-[48ch] border-[4px] bg-white p-8">
-          <h3 className="mb-4 text-lg font-bold">Here is how:</h3>
-          <ol className="list-inside list-decimal">
-            {steps.map((step) => (
-              <li className="mt-4 text-lg">
-                {step.title}
-                <h5 className="text-gray-500">{step.content}</h5>
-              </li>
-            ))}
-          </ol>
+        <div className="bordered">
+          <div className="pixel-corners w-auto max-w-[48ch] bg-white p-8">
+            <h3 className="mb-4 text-lg font-bold">Here is how:</h3>
+            <ol className="list-inside list-decimal">
+              {steps.map((step) => (
+                <li className="mt-4 text-lg">
+                  {step.title}
+                  <h5 className="text-gray-500">{step.content}</h5>
+                </li>
+              ))}
+            </ol>
+          </div>
         </div>
       </div>
       <FloorAsset className="absolute bottom-0 left-0 right-0" />

@@ -22,9 +22,11 @@ export function Floor2() {
       />
       <div
         style={{ animationDuration: '5s' }}
-        className="-transalate-y-1/2 border-blackBorder absolute bottom-[24rem] left-[1rem] right-[1rem] z-10 flex w-auto max-w-[48ch] flex-col justify-between gap-4 border-[4px] bg-white p-8 text-lg motion-safe:animate-float md:bottom-[20%] md:left-auto md:right-[15%] md:w-max md:flex-row md:items-center md:gap-16"
+        className="bordered -transalate-y-1/2 absolute bottom-[24rem] left-[1rem] right-[1rem] z-10 w-auto max-w-[48ch] motion-safe:animate-float md:bottom-[20%] md:left-auto md:right-[15%] md:w-max"
       >
-        <h2>{content}</h2>
+        <div className="pixel-corners flex flex-col justify-between gap-4 bg-white p-8 text-lg md:flex-row md:items-center md:gap-16">
+          <h2>{content}</h2>
+        </div>
       </div>
       <FloorAsset className="absolute bottom-0 left-0 right-0" />
     </div>

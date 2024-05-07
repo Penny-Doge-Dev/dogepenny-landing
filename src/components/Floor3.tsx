@@ -34,18 +34,20 @@ export function Floor3() {
         </h1>
         <div
           style={{ animationDuration: '3s' }}
-          className="border-blackBorder flex w-full max-w-full flex-col justify-between gap-4 border-[4px] bg-white p-8 motion-safe:animate-float md:w-max md:flex-row md:items-center md:gap-16"
+          className="bordered motion-safe:animate-float"
         >
-          <div className="flex-col">
-            <h3 className="text-xl font-bold">Contract Address</h3>
-            <h2 className="break-words">{CA}</h2>
+          <div className="pixel-corners flex w-full max-w-full flex-col justify-between gap-4 bg-white p-8 md:w-max md:flex-row md:items-center md:gap-16">
+            <div className="flex-col">
+              <h3 className="text-xl font-bold">Contract Address</h3>
+              <h2 className="break-words">{CA}</h2>
+            </div>
+            <button
+              onClick={handleCopy}
+              className="w-full border-[4px] border-secondary bg-primary px-12 py-4 text-2xl font-bold transition hover:bg-primaryDarker active:bg-primaryDarkest md:w-auto"
+            >
+              {copyText}
+            </button>
           </div>
-          <button
-            onClick={handleCopy}
-            className="w-full border-[4px] border-secondary bg-primary px-12 py-4 text-2xl font-bold transition hover:bg-primaryDarker active:bg-primaryDarkest md:w-auto"
-          >
-            {copyText}
-          </button>
         </div>
       </div>
       <div className="absolute bottom-[2rem] left-[2rem] isolate z-[2]">
